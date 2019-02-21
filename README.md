@@ -44,3 +44,11 @@ aggregations:
           filter:
             terms: "substate"
 ```
+
+## Installation
+
+`pipenv install`
+
+## Developing
+
+Either use `nix-shell` or read that file for a list of dependencies.
