@@ -1,3 +1,8 @@
+Toy project creating a Query Language for ElasticSearch that isn't some janky json thing.
+
+## Example
+
+```
 QUERY
   post_filter
     WHERE
@@ -14,9 +19,11 @@ AGGREGATE
         user_id = ?
         OR collaborator.id = ?
       )
+```
 
 should get turned into
 
+```
 query:
   post_filter:
     must:
@@ -36,5 +43,4 @@ aggregations:
         aggregations:
           filter:
             terms: "substate"
-      
-  
+```
