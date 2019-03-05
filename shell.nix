@@ -6,5 +6,7 @@ stdenv.mkDerivation rec {
 	buildInputs = [
 		python36
 		pipenv
+		cargo
+		ruby_2_5
 	];
 }
