@@ -52,3 +52,8 @@ aggregations:
 ## Developing
 
 Either use `nix-shell` or read that file for a list of dependencies.
+
+## TODO
+
+* AST to string generation
+* programatic manipulation of AST (e.g. `ast2str(condition + (condition * condition))`)
